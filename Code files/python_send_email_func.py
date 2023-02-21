@@ -5,8 +5,8 @@ import math
 import smtplib
 
 def sendEmail():
-    FROM = 'intradrainalertnetwork@gmail.com'
-    TO = ["intradrainalertnetwork@gmail.com"]
+    FROM = 'fluidflowfindersk@gmail.com'
+    TO = ["fluidflowfinders@gmail.com"]
     SUBJECT = "Hello!"
     TEXT = "This message was sent with Python's smtplib."
     message = 'hi'
