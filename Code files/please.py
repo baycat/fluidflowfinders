@@ -4,8 +4,8 @@ import ssl
 def send_email():
     port = 465  # For SSL
     smtp_server = "smtp.gmail.com"
-    sender_email = "<intradrainalertnetwork@gmail.com>"
-    receiver_email = "<intradrainalertnetwork@gmail.com>"
+    sender_email = "<fluidflowfinders@gmail.com>"
+    receiver_email = "<fluidflowfinders@gmail.com>"
     password = "<wLSD2022>"
     message = """Subject: Arduino Notification\n The switch was turned on."""
 
