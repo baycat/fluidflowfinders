@@ -26,21 +26,18 @@ void setup() {
   
   //level 0
   pinMode(water_sensor_0,INPUT);
-  pinMode(water_sensor_1,INPUT);
 
   //level 1
   pinMode(water_sensor_2,INPUT);
 
   //level 2
   pinMode(water_sensor_3,INPUT);
-  pinMode(water_sensor_4,INPUT);
 
   //level 3
   pinMode(water_sensor_5,INPUT);
 
   //level 4
   pinMode(water_sensor_6,INPUT);
-  pinMode(water_sensor_7,INPUT);
   
   //level 5
   pinMode(water_sensor_8,INPUT);
@@ -60,7 +57,7 @@ void loop() {
 
     //check each sensor and update level boolean
     // lvl 0 update
-    if water_sensor_0 || water_sensor_1
+    if water_sensor_0
       lvl0 = 1;
     else 
       lvl0 = 0;
@@ -72,7 +69,7 @@ void loop() {
       lvl1 = 0;
 
     // lvl 2
-    if water_sensor_3 || water_sensor_4
+    if water_sensor_3
       lvl2 = 1;
     else 
       lvl2 = 0;
@@ -83,13 +80,11 @@ void loop() {
     else 
       lvl2 = 0;
 
-
     // lvl 4 update
-    if water_sensor_6 || water_sensor_7
+    if water_sensor_6
       lvl2 = 1;
     else 
       lvl2 = 0;
-
 
     // lvl 5 update
     if water_sensor_8
