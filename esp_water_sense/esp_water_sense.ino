@@ -1,15 +1,15 @@
   // esp8266 based water level sensing and reporting
 
 
-#define water_sensor_0 A0
-#define water_sensor_1 A1
-#define water_sensor_2 A2
-#define water_sensor_3 A3
-#define water_sensor_4 A4
-#define water_sensor_5 A5
-#define water_sensor_6 A6
-#define water_sensor_7 A7
-#define water_sensor_8 A8
+#define water_sensor_0 1
+#define water_sensor_1 2
+#define water_sensor_2 3
+#define water_sensor_3 4
+#define water_sensor_4 5
+#define water_sensor_5 6
+#define water_sensor_6 7
+#define water_sensor_7 8
+#define water_sensor_8 A0
 
 bool lvl0 = 0;
 bool lvl1 = 0;
@@ -53,7 +53,7 @@ void setup() {
 void loop() {
 
   //every X seconds, check the levels
-  if time % X == Y ->
+  if (time % X == Y) {
 
     //check each sensor and update level boolean
     // lvl 0 update
@@ -91,7 +91,7 @@ void loop() {
       lvl2 = 1;
     else 
       lvl2 = 0;
-
+  }
 
 
 
