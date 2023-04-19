@@ -1,11 +1,12 @@
 #include "Arduino.h"
+#include <ESP8266WiFi.h>
 
-int i = 1;
+int i = 6;
  
 //The setup function is called once at startup of the sketch
 void setup() {
   Serial.begin(9600);
-  while(!Serial) { }
+  while(!Serial1) { }
   Serial.println();
   Serial.println("Start device in normal mode!");
  
